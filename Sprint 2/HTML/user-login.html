@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/b3442dd444.js" crossorigin="anonymous"></script>
+        <title>PINASAHI: Log In</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="user-form.css">
+    </head>
+    <body>
+        <header>
+            <img src="imgs/pinasahi_logo.png" class="logo">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="">ABOUT US</a></li>
+        </header>
+        <!-- Start of form section -->
+        <section>
+            <div class="picBox">
+                <img src="imgs/logIn.png">
+            </div>
+            <div class="contentBox">
+                <div class="formBx">
+                    <h2>Login</h2>
+                    <form action="validation.php" method="post">
+                        <div class="inputBx">
+                            <i class="fa fa-envelope"></i>
+                            <label>Email</label>
+                            <input type="text" name="email" class="form-control" required>    
+                        </div>
+                        <div class="inputBx">
+                            <i class="fa fa-key"></i>
+                            <label>Password</label>
+                            <input type="password" name="password" class="form-control" required>    
+                        </div>
+                        <div class="remember">
+                            <label><input type="checkbox" name="">Remember Me</label>
+                        </div>
+                        <div class="inputBx">
+                            <button type="submit" class="btn btn-primary">Login</button>   
+                        </div>
+                        <div class="inputBx">
+                          <p>Don't have an account yet? Create an account. <a href="user-signUp.html">Sign Up</a></p>      
+                        </div>
+                    </form>
+                    <h3>Login with Social Media</h3>
+                    <ul class="sci">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+    </body>
+
+</html>

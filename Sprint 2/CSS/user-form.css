@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    padding-top: 1.4%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+section .picBox{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+section .picBox::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg, #e91e63, #03a9f4 );
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+section .picBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .contentBox{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 50%;
+    height: 100%; 
+}
+
+section .contentBox .formBx{
+    width: 50%;
+}
+
+section .contentBox .formBx h2{
+    color: var(--brown);
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #ff3527;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+section .contentBox .formBx .inputBx{
+    margin-bottom: 20px;
+}
+
+section .contentBox .formBx .inputBx label{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: var(--brown);
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.5px; 
+}
+
+section .contentBox .formBx .inputBx input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid var(--brown);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: var(--brown);
+    background: transparent;
+    border-radius: 30px;
+}
+
+section .contentBox .formBx .inputBx input[type="submit"]{
+    background: linear-gradient(to right, #fb5283, #ff3527 );
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+section .contentBox .formBx .inputBx input[type="submit"]:hover{
+    background: linear-gradient(to right, #ff3527, #fb5283 );
+}
+
+section .contentBox .formBx .remember{
+    margin-bottom: var(--brown);
+    font-weight: 400;
+    font-size: 14px;   
+}
+
+section .contentBox .formBx .inputBx p{
+    color: var(--brown);
+}
+
+section .contentBox .formBx .inputBx p a{
+    color: #ff3527;
+}
+
+section .contentBox .formBx h3{
+    color: var(--brown);
+    text-align: center;
+    margin: 80px 0 10px;
+    font-weight: 500;
+}
+
+section .contentBox .formBx .sci{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
